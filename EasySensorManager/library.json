@@ -1,0 +1,51 @@
+{
+    "name": "EasySensorManager",
+    "keywords": "sensors, easy, manager, ds18b20, dht, adafruit, hcr04, dht11, dht22, dht21, i2c, water, water level, water level sensor",
+    "description": "An easy to use and extensible Sensor Manager for the ESP32 that adds support for multiple common sensors",
+    "authors": [
+        {
+            "name": "ZanzyTHEbar",
+            "url": "https://github.com/ZanzyTHEbar"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ZanzyTHEbar/EasySensorManager.git"
+    },
+    "dependencies": [
+        {
+            "name": "OneWire",
+            "version": "^",
+            "platforms": [
+                "espressif32"
+            ]
+        },
+        {
+            "owner": "milesburton",
+            "name": "DallasTemperature",
+            "version": "^",
+            "platforms": [
+                "espressif32"
+            ]
+        },
+        {
+            "owner": "adafruit",
+            "name": "Adafruit SHT31 Library",
+            "version": "^2.0.0"
+        },
+        {
+            "owner": "adafruit",
+            "name": "DHT Sensor library",
+            "version": "^1.4.3"
+        }
+    ],
+    "headers": [
+        "src/i2cScanner/i2cscan.hpp",
+        "src/humidity/humidity.hpp",
+        "src/temperature/temperature.hpp",
+        "src/water_level/waterlevelsensor.hpp"
+    ],
+    "version": "1.0.0",
+    "frameworks": "arduino",
+    "platforms": "espressif32"
+}
