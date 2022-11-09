@@ -6,6 +6,8 @@ This library is a wrapper for common sensors. It is designed to be easy to use a
 
 This library _only supports `32bit boards`_, or boards that support the `C++ STL`
 
+> **Note**: Migrating to [OneWireNg](https://github.com/pstolarz/OneWireNg) instead of OneWire - stay tuned.
+
 ## Supported sensors
 
 - [x] DHT11
