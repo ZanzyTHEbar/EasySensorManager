@@ -15,7 +15,7 @@ WaterLevelSensor::~WaterLevelSensor()
 
 void WaterLevelSensor::begin()
 {
-    _radius = RES_RADIUS_1;
+    _radius = RES_RADIUS;
     _height = RES_HEIGHT;
 }
 
@@ -29,7 +29,7 @@ double WaterLevelSensor::readSensor()
     return distance;
 }
 
-WaterLevelSensor::Data_t WaterLevelSensor::readWaterLevelUltraSonic()
+WaterLevelSensor::Data_t WaterLevelSensor::readWaterLevel()
 {
     if (readSensor() <= 0.0)
     {

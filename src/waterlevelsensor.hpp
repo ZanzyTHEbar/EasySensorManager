@@ -5,6 +5,7 @@
 #pragma once
 #ifndef WATERLEVELSENSOR_HPP
 #define WATERLEVELSENSOR_HPP
+#include <Arduino.h>
 #include <memory>
 #include <functional>
 #include <HCSR04.h>
@@ -34,7 +35,7 @@ public:
     virtual ~WaterLevelSensor();
     void begin();
     // Read the water level
-    Data_t readWaterLevelUltraSonic();
+    Data_t readWaterLevel();
     Data_t result;
 };
 #endif

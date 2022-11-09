@@ -318,7 +318,7 @@ float Humidity::StackHumidity()
  * Parameters: None
  * Return: float array
  ******************************************************************************/
-Humidity::Hum Humidity::ReadSensor()
+Humidity::Hum Humidity::readSHT31()
 {
   switch (_humiditySensorsActive)
   {
