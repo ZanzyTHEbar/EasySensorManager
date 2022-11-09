@@ -14,6 +14,9 @@ This library _only supports `32bit boards`_, or boards that support the `C++ STL
 - [x] SHT31
 - [x] DS18B20 (1-Wire)
 - [x] HCR04 (Ultrasonic)
+- [x] DS18S20 (1-Wire)
+- [x] DS1822 (1-Wire)
+- [x] MAX31850 (1-Wire)
 
 There is a built-in `i2C scanner`, so you can easily find the address of your sensor (should it be needed).
 
