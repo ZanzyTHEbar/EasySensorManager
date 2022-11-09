@@ -9,8 +9,7 @@
 #include <functional>
 #include <HCSR04.h>
 
-#include "data/utilities/Network_Utilities.hpp"
-#include "local/io/sensors/temperature/towertemp.hpp"
+#include "temperature.hpp"
 
 class WaterLevelSensor
 {

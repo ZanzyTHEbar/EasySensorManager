@@ -21,7 +21,7 @@ void WaterLevelSensor::begin()
 
 double WaterLevelSensor::readSensor()
 {
-    Network_Utilities::my_delay(1L);
+    delay(1000);
     double distance = _distanceSensor->measureDistanceCm(_towerTemp->temp_sensor_results.temp[0]);
     log_d("Distance: %.3f cm", distance, DEC);
     log_d("Temperature: %.3f °C", _towerTemp->temp_sensor_results.temp[0], DEC);
