@@ -60,7 +60,7 @@ lib_deps =
 
 ### Basic usage
 
-Please see the [examples](/EasySensorManager/examples) for more information.
+Please see the [examples](/examples) for more information.
 
 ### Advanced usage
 
