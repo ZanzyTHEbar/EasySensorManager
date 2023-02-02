@@ -14,29 +14,27 @@
  * #define ONE_WIRE_BUS
  */
 
-#if USE_ALL_SENSORS
-#define USE_HUMIDITY 1
-#define USE_TEMPERATURE 1
-#define USE_WATERLEVELSENSOR 1
-#define USE_I2CSCANNER 1
+#ifdef USE_ALL_SENSORS
+#define USE_HUMIDITY
+#define USE_TEMPERATURE
+#define USE_WATERLEVELSENSOR
+#define USE_I2CSCANNER
 #endif // USE_ALL_SENSORS
 
-#if USE_TEMP_HUM
+#ifdef USE_TEMP_HUM
 #define USE_HUMIDITY 1
 #define USE_TEMPERATURE 1
 #endif // USE_TEMP_HUM
 
-#if USE_HUMIDITY
+#ifdef USE_HUMIDITY
 #include "humidity.hpp"
 #endif // USE_HUMIDITY
-#if USE_TEMPERATURE
+#ifdef USE_TEMPERATURE
 #include "temperature.hpp"
 #endif // USE_TEMPERATURE
-#if USE_WATERLEVELSENSOR
+#ifdef USE_WATERLEVELSENSOR
 #include "waterlevelsensor.hpp"
 #endif // USE_WATERLEVELSENSOR
-#if USE_I2CSCANNER
+#ifdef USE_I2CSCANNER
 #include "i2cscan.hpp"
 #endif // USE_I2CSCANNER
-
-

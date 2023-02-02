@@ -11,13 +11,13 @@
  */
 
 // Humidity Sensors
-#define USE_ALL_SENSORS 1
+#define USE_ALL_SENSORS
 #define DHTPIN 4
 #define USE_DHT11 1
 #define USE_DHT22 0
 #define USE_DHT21 0
-#define USE_DHT_SENSOR 1
-#define USE_SHT31_SENSOR 1
+#define USE_DHT_SENSOR
+#define USE_SHT31_SENSOR
 
 // Water Level Sensor
 #define ECHO_PIN 13

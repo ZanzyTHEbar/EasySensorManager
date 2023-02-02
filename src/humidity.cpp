@@ -12,10 +12,10 @@ std::unordered_map<Humidity::_HUMIDITY_SENSORS_ACTIVE, std::string> Humidity::hu
 
 Humidity::Humidity() : _delayS(0),
                        _humiditySensorsActive(HUMIDITY_SENSORS_ACTIVE_NONE),
-#if USE_DHT_SENSOR
+#ifdef USE_DHT_SENSOR
                        dht{std::make_shared<DHT_Unified>(DHTPIN, DHTTYPE)}
 #endif // USE_DHT_SENSOR
-#if USE_SHT31_SENSOR
+#ifdef USE_SHT31_SENSOR
                        ,
                        _enableHeater(false),
                        _loopCnt(0),
